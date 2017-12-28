@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class LongestIncreasingSubsequence {
+
 	public static void main(String... s) {
 
 		Scanner sc = new Scanner(System.in);
@@ -15,13 +16,17 @@ public class LongestIncreasingSubsequence {
 			arr[i] = sc.nextInt();
 		}
 
-		System.out.println(longestIncSubseq(arr));
+		System.out.println("Using DP (Tabulation)-");
+		System.out.println(longestIncSubseqUsingTabulation(arr));
+
+		System.out.println("Using Recursion-");
+		System.out.println(longestIncSubseqUsingRecusrion(arr, 0));
 
 		sc.close();
 
 	}
 
-	private static int longestIncSubseq(int[] arr) {
+	private static int longestIncSubseqUsingTabulation(int[] arr) {
 
 		int lis[] = new int[arr.length];
 
@@ -51,5 +56,19 @@ public class LongestIncreasingSubsequence {
 		}
 
 		return lisMax;
+	}
+
+	private static int longestIncSubseqUsingRecusrion(int[] arr, int n) {
+
+		if (n == arr.length - 1) {
+			return 1;
+		}
+
+		if (arr[n] < arr[n + 1]) {
+			return 1 + longestIncSubseqUsingRecusrion(arr, n + 1);
+		} else {
+			return longestIncSubseqUsingRecusrion(arr, n + 1);
+		}
+
 	}
 }
