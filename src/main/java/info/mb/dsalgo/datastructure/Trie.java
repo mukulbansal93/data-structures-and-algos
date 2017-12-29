@@ -1,5 +1,10 @@
 package info.mb.dsalgo.datastructure;
 
+/**
+ * 
+ * @author Mukul Bansal
+ *
+ */
 import java.util.ArrayList;
 import java.util.List;
 

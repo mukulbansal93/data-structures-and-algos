@@ -1,5 +1,10 @@
 package info.mb.dsalgo.practice.dp;
 
+/**
+ * 
+ * @author Mukul Bansal
+ *
+ */
 public class KnapsackToReturnTotalValue {
 
 	private static int recursionHits = 0;

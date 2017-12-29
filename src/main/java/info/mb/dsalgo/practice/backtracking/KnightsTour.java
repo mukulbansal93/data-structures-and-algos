@@ -1,5 +1,10 @@
 package info.mb.dsalgo.practice.backtracking;
 
+/**
+ * 
+ * @author Mukul Bansal
+ *
+ */
 public class KnightsTour {
 
 	public static int n = 8;

@@ -2,6 +2,11 @@ package info.mb.dsalgo.practice.dp;
 
 import java.util.Scanner;
 
+/**
+ * 
+ * @author Mukul Bansal
+ *
+ */
 public class LongestCommonSubsequence {
 
 	private static int memo[][];

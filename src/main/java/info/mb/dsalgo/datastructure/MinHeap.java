@@ -4,6 +4,11 @@ import java.util.Arrays;
 import java.util.function.IntConsumer;
 import java.util.stream.IntStream;
 
+/**
+ * 
+ * @author Mukul Bansal
+ *
+ */
 public class MinHeap {
 
 	public class HeapData {

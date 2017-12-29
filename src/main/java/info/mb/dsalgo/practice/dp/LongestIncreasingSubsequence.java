@@ -3,6 +3,11 @@ package info.mb.dsalgo.practice.dp;
 import java.util.Arrays;
 import java.util.Scanner;
 
+/**
+ * 
+ * @author Mukul Bansal
+ *
+ */
 public class LongestIncreasingSubsequence {
 
 	public static void main(String... s) {

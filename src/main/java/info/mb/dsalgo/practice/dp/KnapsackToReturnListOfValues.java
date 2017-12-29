@@ -3,6 +3,11 @@ package info.mb.dsalgo.practice.dp;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 
+ * @author Mukul Bansal
+ *
+ */
 public class KnapsackToReturnListOfValues {
 
 	public static void main(String... s) {

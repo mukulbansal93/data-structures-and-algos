@@ -1,5 +1,10 @@
 package info.mb.dsalgo.datastructure;
 
+/**
+ * 
+ * @author Mukul Bansal
+ *
+ */
 public class SinglyLinkedList {
 
 	public int data;

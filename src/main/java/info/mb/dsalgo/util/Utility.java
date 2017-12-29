@@ -1,5 +1,10 @@
 package info.mb.dsalgo.util;
 
+/**
+ * 
+ * @author Mukul Bansal
+ *
+ */
 public class Utility {
 
 	/**

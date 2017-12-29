@@ -8,6 +8,11 @@ import java.util.Stack;
 import info.mb.dsalgo.datastructure.UndirectedGraph;
 import info.mb.dsalgo.util.Constants;
 
+/**
+ * 
+ * @author Mukul Bansal
+ *
+ */
 public class Dijkstra {
 
 	public static void main(String... s) {

@@ -2,6 +2,11 @@ package info.mb.dsalgo.practice.recursion;
 
 import info.mb.dsalgo.util.Constants;
 
+/**
+ * 
+ * @author Mukul Bansal
+ *
+ */
 public class AllPossibleSubsets {
 
 	public static void main(String... s) {
