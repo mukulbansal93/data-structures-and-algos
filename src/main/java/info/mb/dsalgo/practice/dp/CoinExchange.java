@@ -18,7 +18,7 @@ public class CoinExchange {
 		int S[] = { 1, 2, 3 };
 		memo = new int[S.length + 1][N + 1];
 		System.out.println(coinExchange(N, S, S.length));
-		System.out.println("recusrionHits-" + recursionHits);
+		System.out.println("recursionHits-" + recursionHits);
 		System.out.println("memoHits-" + memoHits);
 	}
 
