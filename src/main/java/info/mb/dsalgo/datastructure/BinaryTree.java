@@ -17,11 +17,11 @@ public class BinaryTree {
 	public Node root;
 
 	public class Node {
-		int data;
-		Node leftChild;
-		Node rightChild;
+		public int data;
+		public Node leftChild;
+		public Node rightChild;
 		// For printing bottom view only
-		int horizontalDistance;
+		public int horizontalDistance;
 
 		public Node(int data) {
 			this.data = data;
