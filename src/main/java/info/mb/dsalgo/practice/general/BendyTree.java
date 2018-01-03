@@ -1,5 +1,8 @@
 package info.mb.dsalgo.practice.general;
 
+import java.util.Deque;
+import java.util.LinkedList;
+
 import info.mb.dsalgo.datastructure.BinaryTree;
 import info.mb.dsalgo.datastructure.BinaryTree.Node;
 
@@ -32,10 +35,13 @@ public class BendyTree {
 		System.out.println("Values of tree in sorted Order are- ");
 		tree.display(tree.root);
 
-		// We can even print the path with maximum number of bends if we maintain a
-		// parent pointer in our Binary Tree class.
-		System.out.print("Maximum Bnds in the tree- ");
+		System.out.print("Maximum bends in the tree- ");
 		System.out.println(maximumBends(tree.root, "noDir", 0) - 1 + "\n");
+		System.out.println("Maximum bendy path in the tree- ");
+		Deque<Node> deque = maximumBendPath(tree.root, "noDir", 0);
+		while (!deque.isEmpty()) {
+			System.out.println(deque.removeLast().data);
+		}
 	}
 
 	private static int maximumBends(Node node, String dir, int level) {
@@ -64,6 +70,51 @@ public class BendyTree {
 		}
 
 		return Math.max(bends1, bends2);
+	}
+
+	private static Deque<Node> maximumBendPath(Node node, String dir, int level) {
+		if (node.leftChild == null && node.rightChild == null) {
+			Deque<Node> deque = new LinkedList<Node>();
+			deque.add(node);
+			return deque;
+		}
+
+		Deque<Node> deque1 = new LinkedList<Node>();
+		Deque<Node> deque2 = new LinkedList<Node>();
+
+		if (dir.equalsIgnoreCase("left")) {
+			if (node.leftChild != null) {
+				deque1 = maximumBendPath(node.leftChild, "left", level + 1);
+				deque1.add(node);
+			}
+			if (node.rightChild != null) {
+				deque2 = maximumBendPath(node.rightChild, "right", level + 1);
+				deque2.add(node);
+			}
+		} else if (dir.equalsIgnoreCase("right")) {
+			if (node.leftChild != null) {
+				deque1 = maximumBendPath(node.leftChild, "left", level + 1);
+				deque1.add(node);
+			}
+			if (node.rightChild != null) {
+				deque2 = maximumBendPath(node.rightChild, "right", level + 1);
+				deque2.add(node);
+			}
+		} else if (dir.equals("noDir")) {
+			if (node.leftChild != null) {
+				deque1 = maximumBendPath(node.leftChild, "left", level + 1);
+				deque1.add(node);
+			}
+			if (node.rightChild != null) {
+				deque2 = maximumBendPath(node.rightChild, "right", level + 1);
+				deque2.add(node);
+			}
+		}
+
+		if (deque1.size() >= deque2.size()) {
+			return deque1;
+		}
+		return deque2;
 	}
 
 }
