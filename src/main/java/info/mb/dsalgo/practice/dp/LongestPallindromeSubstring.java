@@ -1,5 +1,12 @@
 package info.mb.dsalgo.practice.dp;
 
+/**
+ * Problem Statement-
+ * https://www.geeksforgeeks.org/longest-palindrome-substring-set-1/
+ * 
+ * @author Mukul Bansal
+ *
+ */
 public class LongestPallindromeSubstring {
 
 	public static void main(String[] args) {
@@ -15,7 +22,7 @@ public class LongestPallindromeSubstring {
 	 * @return
 	 */
 	private static int longestPallindromeLength(String s) {
-		
+
 		int l = s.length();
 		int max = 0;
 		for (int i = 0; i < l; i++) {
