@@ -8,7 +8,7 @@ import info.mb.dsalgo.datastructure.BinaryTree.Node;
  * The left pointer of the binary tree node should act as a previous node for
  * created DLL and right pointer should act as next node.
  * 
- * This solution uses constant space and time complexity is O(n).
+ * This solution uses constant space and time complexity is O(numberOfItems).
  * 
  * @author Mukul Bansal
  *

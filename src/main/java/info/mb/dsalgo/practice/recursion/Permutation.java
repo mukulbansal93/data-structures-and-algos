@@ -76,7 +76,7 @@ public class Permutation {
 		str = Utility.swap(str, largestI, largestJ);
 		chars = str.toCharArray();
 
-		// STEP 4: Reverse chars[x+1 .. n].
+		// STEP 4: Reverse chars[x+1 .. numberOfItems].
 		chars = Utility.reverse(chars, largestI + 1, chars.length);
 
 		System.out.println(new String(chars));

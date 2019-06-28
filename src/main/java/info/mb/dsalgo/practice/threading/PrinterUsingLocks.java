@@ -1,11 +1,11 @@
 package info.mb.dsalgo.practice.threading;
 
 /**
- * 
+ *
  * @author Mukul Bansal
  *
  */
-public class Printer {
+public class PrinterUsingLocks {
 
 	Object lock = new Object();
 	int turn = 1;

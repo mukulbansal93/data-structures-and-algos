@@ -23,7 +23,7 @@ class BobAndGcd {
 			int k = s.nextInt();
 			// System.out.println("k-" + k);
 			int n = s.nextInt();
-			// System.out.println("n-" + n);
+			// System.out.println("numberOfItems-" + numberOfItems);
 
 			for (int i = 0; i < n; i++) {
 				arr[i] = s.nextInt();

@@ -8,7 +8,8 @@ package info.mb.dsalgo.practice.threading;
 public class ThreadSychronizer {
 
 	public static void main(String... s) {
-		Printer printer = new Printer();
+		PrinterUsingLocks printer = new PrinterUsingLocks();
+		//PrinterUsingSemaphore printer = new PrinterUsingLocks();
 
 		Thread t1 = new Thread(printer.new Printer1());
 		Thread t2 = new Thread(printer.new Printer2());

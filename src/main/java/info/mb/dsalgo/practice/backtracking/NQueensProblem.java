@@ -7,7 +7,7 @@ package info.mb.dsalgo.practice.backtracking;
  */
 public class NQueensProblem {
 
-	public static int n = 10;
+	public static int n = 15;
 	public static int diagonalIMoves[] = { 1, -1, 1, -1 };
 	public static int diagonalJMoves[] = { 1, -1, -1, 1 };
 
